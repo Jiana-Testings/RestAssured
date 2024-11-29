@@ -1,0 +1,21 @@
+{
+	// nothing in here that can fail validation if the file is empty
+	//https://json-schema.org
+	
+	 "$schema": "https://json-schema.org/draft/2020-12/schema",
+	 "$type": "object",
+	 "properties": {
+		 "userID": {
+			 "type": "integer"
+			 "minimum": 2,
+			 "maximum": 10
+		 },
+		 "title": {
+			 "type": "string"
+			 "minLength": 4
+		 },
+		 "unkknow": {}
+	 },
+	 
+	 "required": ["userID", "title"]
+}
